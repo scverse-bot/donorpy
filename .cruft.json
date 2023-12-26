@@ -1,0 +1,28 @@
+{
+  "template": "https://github.com/scverse/cookiecutter-scverse",
+  "commit": "cccd4e9e0f176b607b6a88818565f9d49d5ce5a2",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "project_name": "donorpy",
+      "package_name": "donorpy",
+      "project_description": "Resolving donor differences in single cell data.",
+      "author_full_name": "Daniel J. Kunz",
+      "author_email": "info@djkunz.com",
+      "github_user": "d-j-k",
+      "project_repo": "https://github.com/d-j-k/donorpy",
+      "license": "GNU General Public License Version 3",
+      "_copy_without_render": [
+        ".github/workflows/**.yaml",
+        "docs/_templates/autosummary/**.rst"
+      ],
+      "_render_devdocs": false,
+      "_jinja2_env_vars": {
+        "lstrip_blocks": true,
+        "trim_blocks": true
+      },
+      "_template": "https://github.com/scverse/cookiecutter-scverse"
+    }
+  },
+  "directory": null
+}
