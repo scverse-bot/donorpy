@@ -1,7 +1,7 @@
 {
   "template": "https://github.com/scverse/cookiecutter-scverse",
-  "commit": "cccd4e9e0f176b607b6a88818565f9d49d5ce5a2",
-  "checkout": null,
+  "commit": "586b1652162ff7994b0070a034023d64289ae416",
+  "checkout": "v0.3.1",
   "context": {
     "cookiecutter": {
       "project_name": "donorpy",
@@ -13,7 +13,8 @@
       "project_repo": "https://github.com/d-j-k/donorpy",
       "license": "GNU General Public License Version 3",
       "_copy_without_render": [
-        ".github/workflows/**.yaml",
+        ".github/workflows/build.yaml",
+        ".github/workflows/test.yaml",
         "docs/_templates/autosummary/**.rst"
       ],
       "_render_devdocs": false,
