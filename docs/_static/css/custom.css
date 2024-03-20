@@ -2,3 +2,11 @@
 div.cell_output table.dataframe {
     font-size: 0.8em;
 }
+
+.wy-nav-side {
+    background: #343131 !important;
+}
+
+.wy-side-nav-search {
+    background-color: #343131 !important;
+}

@@ -107,19 +107,22 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", "**.ipynb_checkpoints"]
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = "sphinx_book_theme"
+# html_theme = "sphinx_book_theme"
+html_theme = "sphinx_rtd_theme"
 html_static_path = ["_static"]
-html_css_files = ["css/custom.css"]
+# html_css_files = ["css/custom.css"]
+html_css_files = [("css/custom.css", {"priority": 200})]
 html_logo = "_static/img/donorpy_logo.svg"
 
 html_title = project_name
 
 html_theme_options = {
-    "repository_url": repository_url,
-    "use_repository_button": True,
-    "path_to_docs": "docs/",
+    # "repository_url": repository_url,
+    # "use_repository_button": True,
+    # "path_to_docs": "docs/",
     "navigation_with_keys": False,
     "logo_only": True,
+    "display_version": False,
 }
 
 pygments_style = "default"
