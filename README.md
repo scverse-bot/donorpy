@@ -2,10 +2,13 @@
 
 [![Tests][badge-tests]][link-tests]
 [![Documentation][badge-docs]][link-docs]
+[![codecov](https://codecov.io/gh/d-j-k/donorpy/graph/badge.svg?token=06TKN4STJ2)](https://codecov.io/gh/d-j-k/donorpy)
 
 [badge-tests]: https://img.shields.io/github/actions/workflow/status/d-j-k/donorpy/test.yaml?branch=main
 [link-tests]: https://github.com/d-j-k/donorpy/actions/workflows/test.yml
 [badge-docs]: https://img.shields.io/readthedocs/donorpy
+
+https://app.codecov.io/gh/d-j-k/donorpy
 
 Resolving donor differences in single cell data.
 
