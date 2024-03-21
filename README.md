@@ -8,8 +8,6 @@
 [link-tests]: https://github.com/d-j-k/donorpy/actions/workflows/test.yml
 [badge-docs]: https://img.shields.io/readthedocs/donorpy
 
-https://app.codecov.io/gh/d-j-k/donorpy
-
 Resolving donor differences in single cell data.
 
 :warning: _This package is work in progress and not functional yet. A first full version of the package including tutorials will be released alongside a preprint soon._
