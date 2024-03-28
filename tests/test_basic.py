@@ -1,10 +1,10 @@
 import pytest
 
-import donorpy
+import donorpy as dn
 
 
 def test_package_has_version():
-    assert donorpy.__version__ is not None
+    assert dn.__version__ is not None
 
 
 @pytest.mark.skip(reason="This decorator should be removed when test passes.")
