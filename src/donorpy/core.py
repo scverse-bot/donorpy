@@ -79,7 +79,8 @@ def _emd_donorpair_pmt(
 
 
 def _emd_donorpair_pmt_wrapper(x):
-    return _emd_donorpair_pmt(x[0], x[1], n_comp=x[2], n_pmt_pval=x[3])
+    array_donor_EMD = _emd_donorpair_pmt(x[0], x[1], n_comp=x[2], n_pmt_pval=x[3])
+    return array_donor_EMD
 
 
 def emd_pval(
