@@ -70,3 +70,20 @@ def test_emd_donorpair_pmt():
     )
 
     assert all(array_donor_EMD[-1, :] == 0.0)
+
+    # Test EMD = 1.0 for non overlapping donors
+    dist_2 = dist_1 + 2.0
+    X_diffmap = np.concatenate((dist_1, dist_2), axis=0)
+
+    adata = ad.AnnData(obs=metadata, obsm={"X_diffmap": X_diffmap})
+
+    array_donor_EMD = _emd_donorpair_pmt_wrapper(
+        [
+            adata,
+            ["donor_1", "donor_2"],
+            2,
+            5,
+        ]
+    )
+
+    assert all(array_donor_EMD[-1, :] == 1.0)
