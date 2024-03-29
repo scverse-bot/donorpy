@@ -4,7 +4,7 @@ import pandas as pd
 import pytest
 
 import donorpy as dn
-from donorpy.core import _emd_donorpair_pmt
+from donorpy.core import _emd_donorpair_pmt_wrapper
 
 
 def test_package_has_version():
@@ -60,11 +60,13 @@ def test_emd_donorpair_pmt():
 
     adata = ad.AnnData(obs=metadata, obsm={"X_diffmap": X_diffmap})
 
-    array_donor_EMD = _emd_donorpair_pmt(
-        adata,
-        ["donor_1", "donor_2"],
-        n_comp=2,
-        n_pmt_pval=5,
+    array_donor_EMD = _emd_donorpair_pmt_wrapper(
+        [
+            adata,
+            ["donor_1", "donor_2"],
+            2,
+            5,
+        ]
     )
 
     assert all(array_donor_EMD[-1, :] == 0.0)
