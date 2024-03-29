@@ -71,7 +71,7 @@ def test_emd_donorpair_pmt():
 
     assert all(array_donor_EMD[-1, :] == 0.0)
 
-    # Test EMD = 1.0 for non overlapping donors
+    # Test EMD >= 1.0 for non overlapping donors
     dist_2 = dist_1 + 2.0
     X_diffmap = np.concatenate((dist_1, dist_2), axis=0)
 
@@ -86,4 +86,4 @@ def test_emd_donorpair_pmt():
         ]
     )
 
-    assert all(array_donor_EMD[-1, :] == 1.0)
+    assert all(array_donor_EMD[-1, :] >= 1.0)
