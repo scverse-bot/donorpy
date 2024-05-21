@@ -7,7 +7,7 @@ name = "donorpy"
 version = "0.0.1"
 description = "Resolving donor differences in single cell data."
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 license = {file = "LICENSE"}
 authors = [
     {name = "Daniel J. Kunz"},
@@ -37,7 +37,7 @@ doc = [
     "docutils>=0.8,!=0.18.*,!=0.19.*",
     "sphinx>=4",
     "sphinx-book-theme>=1.0.0",
-    "myst-nb",
+    "myst-nb>=1.1.0",
     "sphinxcontrib-bibtex>=1.0.0",
     "sphinx_rtd_theme",
     "sphinx-autodoc-typehints",
@@ -103,7 +103,7 @@ ignore = [
     "D107",
     # Errors from function calls in argument defaults. These are fine when the result is immutable.
     "B008",
-    # __magic__ methods are are often self-explanatory, allow missing docstrings
+    # __magic__ methods are often self-explanatory, allow missing docstrings
     "D105",
     # first line should end with a period [Bug: doesn't work with single-line docstrings]
     "D400",
