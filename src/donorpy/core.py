@@ -115,7 +115,7 @@ def emd_pval(
         for j in range(n_comp):
             pval_pmt_emd[i, j] = sum(array_sim_emd[i, :, j] > array_act_emd[i, j]) / array_sim_emd.shape[1]
 
-    paired_donorIDs_1, paired_donorIDs_2 = zip(*paired_donorIDs)
+    paired_donorIDs_1, paired_donorIDs_2 = zip(*paired_donorIDs, strict=False)
     dict_emd = {
         "donorID_1": np.tile(np.asarray(paired_donorIDs_1), n_comp),
         "donorID_2": np.tile(np.asarray(paired_donorIDs_2), n_comp),
